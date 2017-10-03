@@ -1,8 +1,8 @@
 # log_rankings
 # compile
-kotlinc parse_log.kt -include-runtime -d parse_log.jar
+`$ kotlinc parse_log.kt -include-runtime -d parse_log.jar`
 # run on log file named log.csv
-java -jar parse_log.jar log.csv
+`$ java -jar parse_log.jar log.csv`
 # sample input
 <pre>
 Path,User,Timestamp
