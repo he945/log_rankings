@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
   val fileName = args[0]
 
   File(fileName).forEachLine { parseLine(it) }
-  val sortedUniqueHits = uniqueHits.toList().sortedBy { (_, value) -> value}.toMap()
+  val sortedUniqueHits = uniqueHits.toList().sortedByDescending { (_, value) -> value}.toMap()
   println("----------------------------------------")
   println("pages by unique hits")
   println("----------------------------------------")
@@ -73,7 +73,7 @@ fun main(args: Array<String>) {
   for (entry in userEntries) {
     userCounts.put(entry.key, entry.value.size)
   }
-  val sortedUserCounts = userCounts.toList().sortedBy { (_, value) -> value}.toMap()
+  val sortedUserCounts = userCounts.toList().sortedByDescending { (_, value) -> value}.toMap()
   println("\n----------------------------------------")
   println("pages by number of users")
   println("----------------------------------------")
@@ -85,7 +85,7 @@ fun main(args: Array<String>) {
   for (entry in userUniquePageViews) {
     userUniquePageViewCounts.put(entry.key, entry.value.size)
   }
-  val sortedUserUniquePageViewCounts = userUniquePageViewCounts.toList().sortedBy { (_, value) -> value}.toMap()
+  val sortedUserUniquePageViewCounts = userUniquePageViewCounts.toList().sortedByDescending { (_, value) -> value}.toMap()
   println("\n----------------------------------------")
   println("users by unique page views")
   println("----------------------------------------")
