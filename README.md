@@ -15,8 +15,8 @@ Path,User,Timestamp
 ----------------------------------------
 pages by unique hits
 ----------------------------------------
-Page: /index2.html Unique Hits: 1
 Page: /index.html Unique Hits: 2
+Page: /index2.html Unique Hits: 1
 
 ----------------------------------------
 pages by number of users
